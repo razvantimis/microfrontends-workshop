@@ -59,7 +59,7 @@ function renderPage() {
   const variant = product.variants.find((v) => state.variant === v.sku);
   const reco = recos[variant.sku];
   $app.innerHTML = `
-    <h1 id="store">The Model Store</h1>
+    <h1 id="store">The Tractor Store</h1>
     <div id="basket" class="${state.basket === 0 ? 'empty' : ''}">basket: ${state.basket} item(s)</div>
     <div id="image"><div><img src="${variant.image}" alt="${variant.name}" /></div></div>
     <h2 id="name">${product.name} <small>${variant.name}</small></h2>
